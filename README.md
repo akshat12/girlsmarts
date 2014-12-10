@@ -1,4 +1,4 @@
-GIRLsmarts
+GIRLsmarts4tech HTML
 ==========
 
-This repo keeps track of the online manual and templates for the UBC GIRLsmarts HTML activity.
+This repo keeps track of the online HTML activity for UBC GIRLsmarts.
