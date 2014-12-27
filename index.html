@@ -4,29 +4,37 @@
 Manual created by Rebecca McKnight
 for the GIRLsmarts 2014 workshops
 
-Last updated by Rebecca McKnight on 19-Jan-2014
+Some style modifications by Julieta Martinez, 2014.
 -->
 
 <html>
 	<head>
-		<title>GIRLsmarts HTML Activity</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<title>GIRLsmarts4tech HTML Activity</title>
 
-		<style>
-			body { font-size:16px; }
-			li { padding-top: 10px; }
-		</style>
+		<!-- bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 	</head>
 
-	<body bgcolor="lightblue">
+	<body role="document">
+
+		<div class="jumbotron well-sm">
+			<div class="container">
+				<h1><strong>GIRL</strong>smarts4tech HTML Activity</h1>
+				<p>Welcome to the <strong>GIRL</strong>smarts4tech HTML Activity page! Here you will learn step-by-step how to create your own webpage.
+				<p>Look for the <strong>text in bold</strong> for basic instructions; the regular text will give more details if you need them.</p>
+		</div>
+		</div>
 
 		<div class="container">
-
 			<div class="page-header">
-				<h1 class="text-center">GIRLsmarts HTML Activity</h1>
-				<p class="lead">Welcome to the GIRLsmarts HTML Activity page! Here you will learn step-by-step how to create your own webpage. Look for the <b>text in bold</b> for basic instructions; the regular text will give more details if you need them.</p>
-				<p><span style="color:#FF00CC;"><b>Important reminder:</b> Never post any personal information online, such as your last name, address, phone number or school!</span></p>
+				<div class="alert alert-dismissable alert-warning">
+				<!-- Commenting out the close button. -->
+				<!--
+				  <button type="button" class="close" data-dismiss="alert">×</button> -->
+				    <h4>Important reminder!</h4>
+					<p>Never post any personal information online, such as your last name, address, phone number or school</p>
+				</div>
 			</div>
 
 			<div class="row text-center">
@@ -196,6 +204,6 @@ Last updated by Rebecca McKnight on 19-Jan-2014
 		</div>
 
 		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="http://www.cs.ubc.ca/girlsmarts/template/js/bootstrap.min.js"></script>
+		<script src=js/bootstrap.min.js"></script>
 	</body>
 </html>
