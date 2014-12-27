@@ -9,6 +9,7 @@ Some style modifications by Julieta Martinez, 2014.
 
 <html>
 	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>GIRLsmarts4tech HTML Activity</title>
 
@@ -38,33 +39,40 @@ Some style modifications by Julieta Martinez, 2014.
 
 			<div class="row">
 				<h3><span class="numbercircle">1</span> Get Ready to Code</h3>
-				<ol>
-					<li><b>Open Notepad</b> by clicking on the Start menu, then typing "Notepad" into the search bar and clicking on the Notepad application when it comes up (look for the little blue notepad icon)</li>
-					<li><b>Save your empty HTML file</b> by following these steps:
-					<ol>
-						<li>Click "File", then "Save"</li>
-						<li>Click "Desktop" on the left to save it on your desktop</li>
-						<li>Name it with your first name and .html file extension (for example, <tt>Rebecca.html</tt>)</li>
-						<li>Select "All Files" from the "Save as type" dropdown</li>
-						<li>Click "Save"</li>
-					</ol>
-					<ul>
-						<li><i>Tip: Save often as you go! Save time by pressing CTRL-S in Notepad to save your file.</i></li>
-					</ul>
+				<ol class="list-group">
+					<li class="list-group-item">
+					<h4 class="list-group-item-heading">Open Notepad</h4>
+					by clicking on the Start menu, then typing <code>Notepad</code> into the search bar and clicking on the Notepad application when it comes up (look for the little blue notepad icon)
 					</li>
-					<li><b>Open Firefox</b> by double-clicking the icon on the desktop, or by clicking on the start menu and typing "Firefox" into the search bar and clicking on the Firefox application (you can also use another browser, such as Chrome)</li>
-					<li><b>Open your HTML file in Firefox</b> by following these steps:
+					<li class="list-group-item">
+					<h4 class="list-group-item-heading">Save your empty HTML file</h4>
 					<ol>
-						<li>Click the orange "Firefox" menu button in the top left of the window</li>
-						<li>Click the arrow next to "New Tab", then click the "Open File" button when it appears</li>
-						<li>When the file browser window appears, click on "Desktop" and double-click on your HTML file</li>
+						<li>Click <code>File</code>, then <code>Save</code></li>
+						<li>Click <code>Desktop</code> on the left to save it on your desktop</li>
+						<li>Name it with your first name and .html file extension (for example, <code>Rebecca.html</code>)</li>
+						<li>Select <code>All Files</code> from the <code>Save as type</code> dropdown</li>
+						<li>Click <code>Save</code></li>
+					</ol>
+					<div class="alert alert-dismissable alert-info">
+						<button type="button" class="close" data-dismiss="alert">×</button>
+						<strong>Save often as you go!</strong> Save time by pressing <code>CTRL-S</code> in Notepad to save your file.
+					</div>
+					</li>
+					<li class="list-group-item">
+					<h4 class="list-group-item-heading">Open Firefox</h4> by double-clicking the icon on the desktop, or by clicking on the start menu and typing <code>Firefox</code> into the search bar and clicking on the Firefox application (you can also use another browser, such as Chrome)</li>
+					<li class="list-group-item">
+					<h4 class="list-group-item-heading">Open your HTML file in Firefox</h4>
+					<ol>
+						<li>Click the orange <code>Firefox</code> menu button in the top left of the window</li>
+						<li>Click the arrow next to <code>New Tab</code>, then click the "Open File" button when it appears</li>
+						<li>When the file browser window appears, click on <code>Desktop</code> and double-click on your HTML file</li>
 						<li>You should now see a blank page in Firefox, and the URL bar (where you type web addresses) should have your HTML filename in it</li>
 					</ol>
 					</li>
 				</ol>
 			</div>
 
-			<div class="thumbnail with-caption row text-center" style="background-color:lightblue">
+			<div class="thumbnail with-caption row text-center">
 				<a href="imgs/setup.png"><img src="imgs/setup.png" alt="An image showing the screen split between notepad and the web browser." /></a>
 				<p>This is what your screen should more or less look like</p>
 			</div>
@@ -72,54 +80,54 @@ Some style modifications by Julieta Martinez, 2014.
 			<div class="row">
 				<h3><span class="numbercircle">2</span> Try the Basic Template</h3>
 				<ol>
-					<li><b>Open the <a href="http://www.cs.ubc.ca/girlsmarts/template/basic.html" target="_blank">basic template</a></b> - it will look just like a regular webpage</li>
-					<li><b>Copy the source code</b> by right-clicking on the template page and choosing "View Page Source" or "View Source" from the menu, then selecting all the code by pressing CTRL-A and copying it by pressing CTRL-C</li>
-					<li><b>Paste the source code into Notepad</b> by clicking inside the Notepad window and pressing CTRL-V to paste</li>
-					<li><b>Fill in the template</b> by looking for instructions like <tt>IMAGE URL GOES HERE</tt> and replacing it with something like <tt>http://www.example.com/image.jpg</tt></li>
-					<li><b>See what your page looks like</b> by switching to the Firefox window and refreshing the page by pressing CTRL-R
+					<li><strong>Open the <a href="http://www.cs.ubc.ca/girlsmarts/template/basic.html" target="_blank">basic template</a></strong> - it will look just like a regular webpage</li>
+					<li><strong>Copy the source code</strong> by right-clicking on the template page and choosing "View Page Source" or "View Source" from the menu, then selecting all the code by pressing CTRL-A and copying it by pressing CTRL-C</li>
+					<li><strong>Paste the source code into Notepad</strong> by clicking inside the Notepad window and pressing CTRL-V to paste</li>
+					<li><strong>Fill in the template</strong> by looking for instructions like <tt>IMAGE URL GOES HERE</tt> and replacing it with something like <tt>http://www.example.com/image.jpg</tt></li>
+					<li><strong>See what your page looks like</strong> by switching to the Firefox window and refreshing the page by pressing CTRL-R
 					<ul>
 						<li><i>Tip: Do this often as you make changes to see how your changes affect the look of the page</i></li>
 					</ul>
 					</li>
-					<li><b>Try out different tags</b> like <tt>&lt;h1&gt;</tt> or <tt>&lt;img&gt;</tt> and see what you can do! Check out the manual handout for more detailed info on each tag.
+					<li><strong>Try out different tags</strong> like <tt>&lt;h1&gt;</tt> or <tt>&lt;img&gt;</tt> and see what you can do! Check out the manual handout for more detailed info on each tag.
 					<ul>
 						<li><i>Tip: Check out the "More Information" sections below to see how to add links, images, and videos</i></li>
 					</ul>
 					</li>
-					<li><b>Don't forget to save your work!</b></li>
+					<li><strong>Don't forget to save your work!</strong></li>
 				</ol>
 			</div>
 
 			<div class="row">
 				<h3><span class="numbercircle">3</span> Try the Advanced Template</h3>
 				<ol>
-					<li><b>Create a new HTML file</b> by clicking on "File" then "New" in Notepad</li>
-					<li><b>Save your empty HTML file</b> by following the steps in Part 1, but make sure to give it a different name, such as <tt>Rebecca2.html</tt></li>
-					<li><b>Open your HTML file in Firefox</b> by following the steps in Part 1</li>
-					<li><b>Open the <a href="http://www.cs.ubc.ca/girlsmarts/template/template.html" target="_blank">advanced template</a></b> - it will look just like a regular webpage</li>
-					<li><b>Copy the source code</b> by right-clicking on the template page and choosing "View Page Source" or "View Source" from the menu, then selecting all the code (use CTRL-A like before) and copying it by pressing CTRL-C</li>
-					<li><b>Paste the source code into Notepad</b> by clicking inside the Notepad window and pressing CTRL-V to paste</li>
-					<li><b>Fill in the template</b> by looking for instructions like <tt>IMAGE URL GOES HERE</tt> and replacing it with something like <tt>http://www.example.com/image.jpg</tt></li>
-					<li><b>See what your page looks like</b> by switching to the Firefox window and refreshing the page by pressing CTRL-R
+					<li><strong>Create a new HTML file</strong> by clicking on "File" then "New" in Notepad</li>
+					<li><strong>Save your empty HTML file</strong> by following the steps in Part 1, but make sure to give it a different name, such as <tt>Rebecca2.html</tt></li>
+					<li><strong>Open your HTML file in Firefox</strong> by following the steps in Part 1</li>
+					<li><strong>Open the <a href="http://www.cs.ubc.ca/girlsmarts/template/template.html" target="_blank">advanced template</a></strong> - it will look just like a regular webpage</li>
+					<li><strong>Copy the source code</strong> by right-clicking on the template page and choosing "View Page Source" or "View Source" from the menu, then selecting all the code (use CTRL-A like before) and copying it by pressing CTRL-C</li>
+					<li><strong>Paste the source code into Notepad</strong> by clicking inside the Notepad window and pressing CTRL-V to paste</li>
+					<li><strong>Fill in the template</strong> by looking for instructions like <tt>IMAGE URL GOES HERE</tt> and replacing it with something like <tt>http://www.example.com/image.jpg</tt></li>
+					<li><strong>See what your page looks like</strong> by switching to the Firefox window and refreshing the page by pressing CTRL-R
 					<ul>
 						<li><i>Tip: Do this often as you make changes to see how your changes affect the look of the page</i></li>
 					</ul>
 					</li>
-					<li><b>Have fun making your webpage!</b> Try copying sections to add more images, or change the text colour using the <tt>&lt;font&gt;</tt> tag.
+					<li><strong>Have fun making your webpage!</strong> Try copying sections to add more images, or change the text colour using the <tt>&lt;font&gt;</tt> tag.
 					<ul>
 						<li><i>Tip: Check out the "More Information" sections below to see how to add links, images, and videos</i></li>
 					</ul>
 					</li>
-					<li><b>Don't forget to save your work!</b></li>
+					<li><strong>Don't forget to save your work!</strong></li>
 				</ol>
 			</div>
 
 			<div class="row">
 				<h3><span class="numbercircle">4</span> Upload Your Work</h3>
 				<ol>
-					<li><b>Go to the <a href="http://www.cs.ubc.ca/girlsmarts" target="_blank">upload page</a></b></li>
-					<li><b>Sign in</b> using the username and password shown in your uploading handout</li>
-					<li><b>Upload your file</b> by clicking "Choose File", selecting your file from the desktop, and clicking "Upload"
+					<li><strong>Go to the <a href="http://www.cs.ubc.ca/girlsmarts" target="_blank">upload page</a></strong></li>
+					<li><strong>Sign in</strong> using the username and password shown in your uploading handout</li>
+					<li><strong>Upload your file</strong> by clicking "Choose File", selecting your file from the desktop, and clicking "Upload"
 					<ul>
 						<li><i>Tip: Do this step twice to upload both of your pages so that you can access them from home</i></li>
 					</ul>
@@ -127,15 +135,15 @@ Some style modifications by Julieta Martinez, 2014.
 				</ol>
 			</div>
 
-				<hr/>
-				<h2>More Information</h2>
+			<hr/>
+			<h2>More Information</h2>
 
 			<div class="row">
 				<h3>How to Change the Font Size</h3>
 				<ol>
-					<li><b>Add a font tag to the body of your HTML</b> like so: <tt>&lt;font size="7"&gt;My re-sized text here&lt;/font&gt;</tt> and replace <tt>7</tt> with a number from 1 to 7 (where 1 is the smallest, and 7 is the biggest), and <tt>My re-sized text here</tt> with the text you want to be big or small!
+					<li><strong>Add a font tag to the body of your HTML</strong> like so: <tt>&lt;font size="7"&gt;My re-sized text here&lt;/font&gt;</tt> and replace <tt>7</tt> with a number from 1 to 7 (where 1 is the smallest, and 7 is the biggest), and <tt>My re-sized text here</tt> with the text you want to be big or small!
 					<ul>
-						<li><i>Tip: Remember that you can <b>nest</b> tags inside one another, so you can do things like use both <tt>&lt;font&gt;</tt> and <tt>&lt;b&gt;</tt> tags to make text both a different size and bold</i></li>
+						<li><i>Tip: Remember that you can <strong>nest</strong> tags inside one another, so you can do things like use both <tt>&lt;font&gt;</tt> and <tt>&lt;b&gt;</tt> tags to make text both a different size and bold</i></li>
 					</ul>
 					</li>
 					</li>
@@ -145,8 +153,8 @@ Some style modifications by Julieta Martinez, 2014.
 			<div class="row">
 				<h3>How to Change the Font Colour</h3>
 				<ol>
-					<li><b>Choose a colour and copy its hex code</b> by going to <a href="http://www.colorpicker.com/" target="_blank">an online colour picking tool</a>, finding a colour you like, and copying the six-digit code that represents it, which looks like <tt>#aaaaaa</tt>, except that the <tt>a</tt>'s can be letters (from a-f) or numbers</li>
-					<li><b>Add a font tag to the body of your HTML</b> like so: <tt>&lt;font color="#aaaaaa"&gt;My colourful text here&lt;/font&gt;</tt> making sure to replace <tt>aaaaaa</tt> with the hex code you copied in the first step, and <tt>My colourful text here</tt> with the text you want to be colourful!
+					<li><strong>Choose a colour and copy its hex code</strong> by going to <a href="http://www.colorpicker.com/" target="_blank">an online colour picking tool</a>, finding a colour you like, and copying the six-digit code that represents it, which looks like <tt>#aaaaaa</tt>, except that the <tt>a</tt>'s can be letters (from a-f) or numbers</li>
+					<li><strong>Add a font tag to the body of your HTML</strong> like so: <tt>&lt;font color="#aaaaaa"&gt;My colourful text here&lt;/font&gt;</tt> making sure to replace <tt>aaaaaa</tt> with the hex code you copied in the first step, and <tt>My colourful text here</tt> with the text you want to be colourful!
 					<ul>
 						<li><i>Tip: You can add multiple attributes (like <tt>size</tt> and <tt>color</tt>) to the same <tt>&lt;font&gt;</tt> tag! For example: <tt>&lt;font size="7" color="#ff0000"&gt;My big red text here&lt;/font&gt;</tt></i></li>
 					</ul>
@@ -158,25 +166,25 @@ Some style modifications by Julieta Martinez, 2014.
 			<div class="row">
 				<h3>How to Add a Link</h3>
 				<ol>
-					<li><b>Copy a website URL</b> by opening the webpage in a new tab, then selecting the URL in the browser's bar and pressing CTRL-C to copy it</li>
-					<li><b>Add an anchor tag to the body of your HTML</b> like so: <tt>&lt;a href="http://www.example.com/page.html"&gt;My Link Text&lt;/a&gt;</tt> making sure to replace <tt>http://www.example.com/page.html</tt> with the URL you copied in the first step, and <tt>My Link Text</tt> with what you want the link to say</li>
+					<li><strong>Copy a website URL</strong> by opening the webpage in a new tab, then selecting the URL in the browser's bar and pressing CTRL-C to copy it</li>
+					<li><strong>Add an anchor tag to the body of your HTML</strong> like so: <tt>&lt;a href="http://www.example.com/page.html"&gt;My Link Text&lt;/a&gt;</tt> making sure to replace <tt>http://www.example.com/page.html</tt> with the URL you copied in the first step, and <tt>My Link Text</tt> with what you want the link to say</li>
 				</ol>
 			</div>
 
 			<div class="row">
 				<h3>How to Add an Image</h3>
 				<ol>
-					<li><b>Copy an image URL</b> by looking up an image (try <a href="http://images.google.com" target="_blank">Google Images</a>), then right-clicking on the image and choosing "Copy Image URL" from the menu</li>
-					<li><b>Add an image tag to the body of your HTML</b> like so: <tt>&lt;img src="http://www.example.com/image.jpg"&gt;</tt> making sure to replace <tt>http://www.example.com/image.jpg</tt> with the URL you copied in the first step</li>
+					<li><strong>Copy an image URL</strong> by looking up an image (try <a href="http://images.google.com" target="_blank">Google Images</a>), then right-clicking on the image and choosing "Copy Image URL" from the menu</li>
+					<li><strong>Add an image tag to the body of your HTML</strong> like so: <tt>&lt;img src="http://www.example.com/image.jpg"&gt;</tt> making sure to replace <tt>http://www.example.com/image.jpg</tt> with the URL you copied in the first step</li>
 				</ol>
 			</div>
 
 			<div class="row">
 				<h3>How to Add a YouTube Video</h3>
 				<ol>
-					<li><b>Go to <a href="http://www.youtube.com" target="_blank">YouTube</a> and choose a video</b></li>
-					<li><b>Copy the embed code</b> by right-clicking on the video and choosing "Copy Embed Code"</li>
-					<li><b>Paste the embed code</b> into the body of your HTML file
+					<li><strong>Go to <a href="http://www.youtube.com" target="_blank">YouTube</a> and choose a video</strong></li>
+					<li><strong>Copy the embed code</strong> by right-clicking on the video and choosing "Copy Embed Code"</li>
+					<li><strong>Paste the embed code</strong> into the body of your HTML file
 				</ol>
 			</div>
 
@@ -196,7 +204,8 @@ Some style modifications by Julieta Martinez, 2014.
 
 		</div>
 
-		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src=js/bootstrap.min.js"></script>
+		<script src=js/bootswatch.js"></script>
 	</body>
 </html>
