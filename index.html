@@ -21,11 +21,14 @@ Some style modifications by Julieta Martinez, 2014.
 			.alert-info {
 				margin-bottom: 0px;
 			}
+
+			body {
+				position: relative;
+			}
 		</style>
 	</head>
 
-	<body role="document">
-
+	<body>
 		<div class="jumbotron well-sm">
 			<div class="container">
 				<h1><strong>GIRL</strong>smarts4tech HTML Activity</h1>
@@ -43,13 +46,13 @@ Some style modifications by Julieta Martinez, 2014.
 					<p class="lead"><strong>Never</strong> post any personal information online, such as your name, last name, address, phone number or school.</p>
 				</div>
 
-
-				<div id="side-nav" class="col-md-3">
-					<ul class="nav nav-list affix">
-						<li><a href="#get-ready">1. Get ready to code</a></li>
-						<li><a href="#try-basic">2. Try the basic template</a></li>
-						<li><a href="#try-advanced">3. Try the advanced template</a></li>
+				<div id="my-nav" class="col-md-3">
+					<ul class="nav nav-tabs-stacked affix" role="tablist">
+						<li><a href="#getready">1. Get ready to code</a></li>
+						<li><a href="#trybasic">2. Try the basic template</a></li>
+						<li><a href="#tryadvanced">3. Try the advanced template</a></li>
 						<li><a href="#upload">4. Upload your work</a></li>
+
 						<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#more-information">More information<span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -60,12 +63,13 @@ Some style modifications by Julieta Martinez, 2014.
 							<li><a href="#add-a-video">How to add a YouTube video</a></li>
 						</ul>
 						</li>
+
 					</ul>
 				</div>
 
-				<div class="col-md-9 content" data-spy="scroll" data-target="#side-nav">
+				<div class="col-md-9 content" data-spy="scroll" data-target="#my-nav">
 
-					<section id="get-ready">
+					<section id="getready">
 					<h3><span class="numbercircle">1</span> Get ready to code</h3>
 					<ol class="list-group">
 						<li class="list-group-item">
@@ -106,7 +110,7 @@ Some style modifications by Julieta Martinez, 2014.
 					</div>
 					</section>
 
-					<section id="try-basic">
+					<section id="trybasic">
 					<h3><span class="numbercircle">2</span> Try the basic template</h3>
 					<ol class="list-group">
 						<li class="list-group-item"><strong>Open the <a href="template/basic.html" target="_blank">basic template</a></strong> - it will look just like a regular webpage</li>
@@ -129,7 +133,7 @@ Some style modifications by Julieta Martinez, 2014.
 					</ol>
 					</section>
 
-					<section id="try-advanced">
+					<section id="tryadvanced">
 					<h3><span class="numbercircle">3</span> Try the advanced template</h3>
 					<ol>
 						<li><strong>Create a new HTML file</strong> by clicking on "File" then "New" in Notepad</li>
@@ -230,7 +234,7 @@ Some style modifications by Julieta Martinez, 2014.
 				<h2>References</h2>
 			</div>
 
-			<div class="row">
+			 <div class="row">
 				<ul>
 					<li><a href="http://www.w3schools.com/tags/default.asp" target="_blank">W3Schools HTML Tag Reference</a></li>
 					<li><a href="http://www.w3schools.com/html/default.asp" target="_blank">W3Schools HTML Tutorial</a></li>
@@ -244,7 +248,11 @@ Some style modifications by Julieta Martinez, 2014.
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootswatch.js"></script>
-
 		<script src="js/tricks.js"></script>
-	</body>
+
+		<!--
+		<script>
+			$('body').scrollspy({ target: '#my-nav' });
+		</script>
+		-->
 </html>
