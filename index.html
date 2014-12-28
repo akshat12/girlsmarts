@@ -17,7 +17,6 @@ Some style modifications by Julieta Martinez, 2014.
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- other css tricks -->
 		<link href="css/tricks.css" rel="stylesheet">
-
 		<style>
 			.alert-info {
 				margin-bottom: 0px;
@@ -36,47 +35,69 @@ Some style modifications by Julieta Martinez, 2014.
 		</div>
 
 		<div class="container">
+
 			<div class="alert alert-dismissable alert-warning">
 				<h4>Before we begin, an <strong>important reminder:</strong></h4>
 				<p class="lead"><strong>Never</strong> post any personal information online, such as your name, last name, address, phone number or school.</p>
 			</div>
 
-			<h2>Activity Step-by-Step</h2>
-
 			<div class="row">
-				<h3><span class="numbercircle">1</span> Get Ready to Code</h3>
-				<ol class="list-group">
-					<li class="list-group-item">
-					<strong>Open Notepad</strong>
-					by clicking on the Start menu, then typing <code>Notepad</code> into the search bar and clicking on the Notepad application when it comes up (look for the little blue notepad icon)
-					</li>
-					<li class="list-group-item">
-					<strong>Save your empty HTML file</strong>
-					<ol>
-						<li>Click <code>File</code>, then <code>Save</code></li>
-						<li>Click <code>Desktop</code> on the left to save it on your desktop</li>
-						<li>Name it with your first name and .html file extension (for example, <code>Rebecca.html</code>)</li>
-						<li>Select <code>All Files</code> from the <code>Save as type</code> dropdown</li>
-						<li>Click <code>Save</code></li>
+
+				<div class="col-md-3">
+					<ul class="nav nav-tabs nav-stacked">
+						<li><a href="#">1. Get ready to code</a></li>
+						<li><a href="#">2. Try the basic template</a></li>
+						<li><a href="#">3. Try the advanced template</a></li>
+						<li><a href="#">4. Upload your work</a></li>
+						<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">More information<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Submenu 1-1</a></li>
+							<li><a href="#">Submenu 1-2</a></li>
+							<li><a href="#">Submenu 1-3</a></li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-9">
+
+					<h2>Activity Step-by-Step</h2>
+
+					<h3><span class="numbercircle">1</span> Get Ready to Code</h3>
+					<ol class="list-group">
+						<li class="list-group-item">
+						<strong>Open Notepad</strong>
+						by clicking on the Start menu, then typing <code>Notepad</code> into the search bar and clicking on the Notepad application when it comes up (look for the little blue notepad icon)
+						</li>
+						<li class="list-group-item">
+						<strong>Save your empty HTML file</strong>
+						<ol>
+							<li>Click <code>File</code>, then <code>Save</code></li>
+							<li>Click <code>Desktop</code> on the left to save it on your desktop</li>
+							<li>Name it with your first name and .html file extension (for example, <code>Rebecca.html</code>)</li>
+							<li>Select <code>All Files</code> from the <code>Save as type</code> dropdown</li>
+							<li>Click <code>Save</code></li>
+						</ol>
+						<div class="alert alert-dismissable alert-info" role="alert">
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times</span></button>
+							<strong>Pro tip!</strong> Save time by pressing <kbd><kbd>CTRL</kbd> + <kbd>S</kbd></kbd> in Notepad to save your file.
+						</div>
+						</li>
+						<li class="list-group-item">
+						<strong>Open Firefox</strong>
+						by double-clicking the icon on the desktop, or by clicking on the start menu and typing <code>Firefox</code> into the search bar and clicking on the Firefox application (you can also use another browser, such as Chrome)</li>
+						<li class="list-group-item">
+						<strong>Open your HTML file in Firefox</strong>
+						<ol>
+							<li>Click the orange <code>Firefox</code> menu button in the top left of the window</li>
+							<li>Click the arrow next to <code>New Tab</code>, then click the <code>Open File</code> button when it appears</li>
+							<li>When the file browser window appears, click on <code>Desktop</code> and double-click on your HTML file</li>
+							<li>You should now see a blank page in Firefox, and the URL bar (where you type web addresses) should have your HTML filename in it</li>
+						</ol>
+						</li>
 					</ol>
-					<div class="alert alert-dismissable alert-info" role="alert">
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times</span></button>
-						<strong>Pro tip!</strong> Save time by pressing <kbd><kbd>CTRL</kbd> + <kbd>S</kbd></kbd> in Notepad to save your file.
-					</div>
-					</li>
-					<li class="list-group-item">
-					<strong>Open Firefox</strong>
-					by double-clicking the icon on the desktop, or by clicking on the start menu and typing <code>Firefox</code> into the search bar and clicking on the Firefox application (you can also use another browser, such as Chrome)</li>
-					<li class="list-group-item">
-					<strong>Open your HTML file in Firefox</strong>
-					<ol>
-						<li>Click the orange <code>Firefox</code> menu button in the top left of the window</li>
-						<li>Click the arrow next to <code>New Tab</code>, then click the <code>Open File</code> button when it appears</li>
-						<li>When the file browser window appears, click on <code>Desktop</code> and double-click on your HTML file</li>
-						<li>You should now see a blank page in Firefox, and the URL bar (where you type web addresses) should have your HTML filename in it</li>
-					</ol>
-					</li>
-				</ol>
+				</div>
 			</div>
 
 			<div class="thumbnail with-caption row text-center">
@@ -119,7 +140,9 @@ Some style modifications by Julieta Martinez, 2014.
 					<li><strong>Fill in the template</strong> by looking for instructions like <tt>IMAGE URL GOES HERE</tt> and replacing it with something like <tt>http://www.example.com/image.jpg</tt></li>
 					<li><strong>See what your page looks like</strong> by switching to the Firefox window and refreshing the page by pressing CTRL-R
 					<ul>
-						<li><i>Tip: Do this often as you make changes to see how your changes affect the look of the page</i></li>
+						<li><i>Tip: Do this often as you make changes to see how your changes affect the look of the page</i></li>Before we begin, an important reminder:
+
+Never post any personal information online, such as your name, last na
 					</ul>
 					</li>
 					<li><strong>Have fun making your webpage!</strong> Try copying sections to add more images, or change the text colour using the <tt>&lt;font&gt;</tt> tag.
@@ -214,7 +237,7 @@ Some style modifications by Julieta Martinez, 2014.
 
 		</div>
 
-		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src=js/bootstrap.min.js"></script>
 		<script src=js/bootswatch.js"></script>
 	</body>
