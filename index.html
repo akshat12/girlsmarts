@@ -23,12 +23,12 @@ Some style modifications by Julieta Martinez, 2014.
 			}
 
 			body {
-				position: relative;
+				height: 100%;
 			}
 		</style>
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target="#my-nav">
 		<div class="jumbotron well-sm">
 			<div class="container">
 				<h1><strong>GIRL</strong>smarts4tech HTML Activity</h1>
@@ -47,8 +47,8 @@ Some style modifications by Julieta Martinez, 2014.
 				</div>
 
 				<div id="my-nav" class="col-md-3">
-					<ul class="nav nav-tabs-stacked affix" role="tablist">
-						<li><a href="#getready">1. Get ready to code</a></li>
+					<ul class="nav nav-pills nav-stacked affix" role="tablist">
+						<li class="active"><a href="#getready">1. Get ready to code</a></li>
 						<li><a href="#trybasic">2. Try the basic template</a></li>
 						<li><a href="#tryadvanced">3. Try the advanced template</a></li>
 						<li><a href="#upload">4. Upload your work</a></li>
@@ -67,7 +67,7 @@ Some style modifications by Julieta Martinez, 2014.
 					</ul>
 				</div>
 
-				<div class="col-md-9 content" data-spy="scroll" data-target="#my-nav">
+				<div class="col-md-9 content">
 
 					<section id="getready">
 					<h3><span class="numbercircle">1</span> Get ready to code</h3>
