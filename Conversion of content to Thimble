@@ -1,0 +1,65 @@
+1. Get Ready to Code
+
+1) Open Firefox by double-clicking on the desktop
+2) Go to https://thimble.webmaker.org/ - This is the webpage that makes you easier to see what you change
+3) Enter e-mail address "girls1596@gmail.com"
+- You will see some English lines on the left side of your page with a blank page with one sentence. This tells you that you are ready to make a webpage.
+
+2. Try the Basic
+
+1) Change the sentence "Make something amazing with the web" to your choice - It can be anything you want.
+2) See what your page looks like at your right-hand side of your screen - The previous sentence will be changed into the one you just typed.
+3) Write <p><a href="Link URL goes Here">LINK DESCRIPTION GOES HERE</a></p> at the next line
+- This will add a line of your choice of link to your webpage. Also, check "More Information" section below to see how to add links
+4) Click "save", then click "view" to see the result - Try to open your link to see if it is working
+5) Write <p><img src="IMAGE URL GOES HERE" width="300px" /></p> after the previous line
+- This will add another line to add images. See "More Information" section below to know how to add images
+- Tip: you can change "width" to change the size of the image. You can try if you want to.
+6) Click "save", then click "view" to see the result
+
+3. Try the Advanced Template
+
+1) Open the advanced template - it looks like a regular webpage
+2) Copy the source code by right-clicking on the template page and select "View Page source" from the menu, then selecting all the code by pressing ctrl+A and copy it by pressing ctrl+C
+3) Go to the Firefox and select the code that you have worked on from previous section by pressing ctrl+A
+4) Paste the source code by pressing ctrl+v - this will paste the advanced template source code - if you want to go back to previous section, you simply click "undo" on the top screen
+5) Fill in the template by looking for instructions like IMAGE URL GOES HERE and replacing it with URL, such as http://www.example.com/image.jpg
+6) Click "save", then "view to see what your page looks like on your right-side of the screen
+7) Have fun making your webpage! Try adding more images or changes using "More information" section :)
+
+More Information
+
+How to Change the Font Size
+
+    Add a font tag to the body of your HTML like so: <font size="7">My re-sized text here</font> and replace 7 with a number from 1 to 7 (where 1 is the smallest, and 7 is the biggest), and My re-sized text here with the text you want to be big or small!
+        Tip: Remember that you can nest tags inside one another, so you can do things like use both <font> and <b> tags to make text both a different size and bold
+
+How to Change the Font Colour
+
+    Choose a colour and copy its hex code by going to an online colour picking tool, finding a colour you like, and copying the six-digit code that represents it, which looks like #aaaaaa, except that the a's can be letters (from a-f) or numbers
+    Add a font tag to the body of your HTML like so: <font color="#aaaaaa">My colourful text here</font> making sure to replace aaaaaa with the hex code you copied in the first step, and My colourful text here with the text you want to be colourful!
+        Tip: You can add multiple attributes (like size and color) to the same <font> tag! For example: <font size="7" color="#ff0000">My big red text here</font>
+
+How to Add a Link
+
+    Copy a website URL by opening the webpage in a new tab, then selecting the URL in the browser's bar and pressing CTRL-C to copy it
+    Add an anchor tag to the body of your HTML like so: <a href="http://www.example.com/page.html">My Link Text</a> making sure to replace http://www.example.com/page.html with the URL you copied in the first step, and My Link Text with what you want the link to say
+
+How to Add an Image
+
+    Copy an image URL by looking up an image (try Google Images), then right-clicking on the image and choosing "Copy Image URL" from the menu
+    Add an image tag to the body of your HTML like so: <img src="http://www.example.com/image.jpg"> making sure to replace http://www.example.com/image.jpg with the URL you copied in the first step
+
+How to Add a YouTube Video
+
+    Go to YouTube and choose a video
+    Copy the embed code by right-clicking on the video and choosing "Copy Embed Code"
+    Paste the embed code into the body of your HTML file 
+
+References
+
+    W3Schools HTML Tag Reference
+    W3Schools HTML Tutorial
+    HTMLDog Tutorials for HTML, CSS, and JavaScript
+    Code Academy HTML Tutorial
+
