@@ -28,7 +28,7 @@ Some style modifications by Julieta Martinez, 2014.
 		</style>
 	</head>
 
-	<body data-spy="scroll" data-target="#my-nav">
+	<body  onload="updateFileName()" data-spy="scroll" data-target="#my-nav">
 		<div class="jumbotron well-sm">
 			<div class="container">
 				<h1><strong>GIRL</strong>smarts4tech HTML Activity</h1>
@@ -114,7 +114,7 @@ Some style modifications by Julieta Martinez, 2014.
 					<section id="trybasic">
 					<h3><span class="numbercircle">2</span> Try the basic template</h3>
 					<ol class="list-group">
-						<li class="list-group-item"><strong>Open the <a href="template/basic.html" target="_blank">basic template</a></strong> - it will look just like a regular webpage</li>
+						<li class="list-group-item"><strong>Open the <a id="basic" download="something.html" href="template/basic.html" target="_blank">basic template</a></strong> - it will look just like a regular webpage</li>
 						<li class="list-group-item"><strong>Copy the page</strong> by selecting all the code by pressing <kbd><kbd>CTRL</kbd> + <kbd>A</kbd></kbd> and copying it by pressing <kbd><kbd>CTRL</kbd> + <kbd>C</kbd></kbd></li>
 						<li class="list-group-item"><strong>Paste the source code into Notepad++</strong> by clicking inside the Notepad++ window and pressing <kbd><kbd>CTRL</kbd> + <kbd>V</kbd></kbd> to paste</li>
 						<li class="list-group-item"><strong>Fill in the template</strong> by looking for instructions like <code>IMAGE URL GOES HERE</code> and replacing it with something like <code>http://www.example.com/image.jpg</code></li>
@@ -258,5 +258,22 @@ Some style modifications by Julieta Martinez, 2014.
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootswatch.js"></script>
 		<script src="js/tricks.js"></script>
+		<script>
+			function guid() {
+				function s4() {
+					return Math.floor((1 + Math.random()) * 0x10000)
+					.toString(16)
+					.substring(1);
+				}
+				return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+				s4() + '-' + s4() + s4() + s4();
+			}
+			function updateFileName(){
+				var uuid = guid();	
+				$("#basic").attr("download", uuid+".html");
+			}
 
-	</html>
+			
+		</script>
+		
+		</html>
