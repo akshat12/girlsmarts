@@ -28,7 +28,7 @@ Some style modifications by Julieta Martinez, 2014.
 		</style>
 	</head>
 
-	<body data-spy="scroll" data-target="#my-nav">
+	<body  onload="updateFileName()" data-spy="scroll" data-target="#my-nav">
 		<div class="jumbotron well-sm">
 			<div class="container">
 				<h1><strong>GIRL</strong>smarts4tech HTML Activity</h1>
@@ -114,9 +114,9 @@ Some style modifications by Julieta Martinez, 2014.
 					<section id="trybasic">
 					<h3><span class="numbercircle">2</span> Try the basic template</h3>
 					<ol class="list-group">
-						<li class="list-group-item"><strong>Open the <a href="template/basic.html" target="_blank">basic template</a></strong> - it will look just like a regular webpage</li>
-						<li class="list-group-item"><strong>Copy the page</strong> by selecting all the code by pressing <kbd><kbd>CTRL</kbd> + <kbd>A</kbd></kbd> and copying it by pressing <kbd><kbd>CTRL</kbd> + <kbd>C</kbd></kbd></li>
-						<li class="list-group-item"><strong>Paste the source code into Notepad++</strong> by clicking inside the Notepad++ window and pressing <kbd><kbd>CTRL</kbd> + <kbd>V</kbd></kbd> to paste</li>
+						<li class="list-group-item"><strong>Click on: <a id="basic" download="something.html" href="template/basic.html" target="_blank">basic template</a></strong> - and download the file it will look just like a regular webpage</li>
+						<!-- <li class="list-group-item"><strong>Copy the page</strong> by selecting all the code and pressing <kbd><kbd>CTRL</kbd> + <kbd>A</kbd></kbd> then copying it by pressing <kbd><kbd>CTRL</kbd> + <kbd>C</kbd></kbd></li> -->
+						<li class="list-group-item"><strong>Open the file in Notepad++</strong></li>
 						<li class="list-group-item"><strong>Fill in the template</strong> by looking for instructions like <code>IMAGE URL GOES HERE</code> and replacing it with something like <code>http://www.example.com/image.jpg</code></li>
 						<li class="list-group-item"><strong>See what your page looks like</strong> by switching to the Chrome window and refreshing the page by pressing <kbd><kbd>CTRL</kbd> + <kbd>R</kbd></kbd>
 						<div class="alert alert-dismissable alert-info" role="alert">
@@ -258,5 +258,38 @@ Some style modifications by Julieta Martinez, 2014.
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootswatch.js"></script>
 		<script src="js/tricks.js"></script>
+		<script>
 
-	</html>
+		var firstList = ["Pink", "Barbie", "Unicorn", "Fairy", "Rainbow", "Flower", "Purple", "Red", "Cake", "Candy"];
+		var secondList = ["Velvet", "Princess", "Cupcake", "Makeup", "Snowflake", "Dinosaur", "Paint", "Sparkle", "Bowtie", "Butterfly"];
+
+			function guid() {
+				function s4() {
+					return Math.floor((1 + Math.random()) * 0x10000)
+					.toString(16)
+					.substring(1);
+				}
+				return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+				s4() + '-' + s4() + s4() + s4();
+			}
+
+
+			function getFileName(){
+
+				var firstWordNumber = Math.floor((Math.random(7) * 10) + 1);
+				var secondWordNumber = Math.floor((Math.random(11) * 10) + 1);
+				var firstWord = firstList[firstWordNumber];
+				var secondWord = secondList[secondWordNumber];
+				return firstWord + secondWord + Math.floor((Math.random(13) * 100) + 1);
+
+
+			}
+			function updateFileName(){
+				var uuid = getFileName();	
+				$("#basic").attr("download", uuid+".html");
+			}
+
+			
+		</script>
+		
+		</html>
